@@ -34,5 +34,55 @@ def amounts(perfect_10_recipe)
 end
 
 #6: Return the number of ingredients in the `perfect_10_recipe` hash.
-def number_ingredients(perfect_10_recipe)
+
+#def number_ingredients(perfect_10_recipe)
+
+perfect_10_recipe = 
+                      {"almond flour" => "2 cups",
+                      "gluten freewhole oats" => "1 cup",
+                      "kosher salt" => "1/2 tsp.",
+                      "Baking Powder"=> "1/2 Tsp.",
+                      "Baking soda" => "1/2 tsp",
+                      "Xantham Gum" => "1/2 tsp.",
+                      "Sliver Almonds, lightly toasted" => "1/4 cup",
+                      "Mini dark chocolate chips" => "3/4 cup",
+                      "Olive Oil" => "1/2 cups",
+                      "Agave" => "1/4 cup"}
+#end 
+                    
+def recipe_ingredients(perfect_10_recipe)
+  
+ return perfect_10_recipe
+  
 end
+
+# puts recipe_ingredients(perfect_10_recipe)
+
+def amount_of_chocolate_chips(perfect_10_recipe)
+  return perfect_10_recipe ["Mini dark chocolate chips"]
+end 
+
+def ingredients_and_amounts(perfect_10_recipe)
+  perfect_10_recipe.each do |key, value|
+    puts key
+    puts value 
+  end 
+end 
+
+#ingredients_and_amounts(perfect_10_recipe)
+
+def ingredients(perfect_10_recipe)
+  perfect_10_recipe.each do |key, value|
+    puts key
+  end 
+end 
+
+def amounts(perfect_10_recipe)
+  perfect_10_recipe.each do |key, value|
+    puts value
+  end 
+end 
+
+#puts perfect_10_recipe.size
+
+ingredients(perfect_10_recipe)
